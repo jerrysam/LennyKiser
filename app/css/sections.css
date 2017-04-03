@@ -1,0 +1,6 @@
+#hero {
+  background: url("../images/home-studio.jpg") center center no-repeat;
+  background-size: cover;
+  color: white; }
+  #hero .column {
+    margin: 25% 0; }
