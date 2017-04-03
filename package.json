@@ -1,0 +1,9 @@
+{
+  "name": "LennyKiser",
+  "private": true,
+  "dependencies": {
+    "gulp": "latest",
+    "browser-sync": "latest",
+    "gulp-sass": "latest"
+  }
+}
