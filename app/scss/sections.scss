@@ -3,18 +3,51 @@
   background-size: cover;
   color: white;
   .column {
-    margin:25% 0;
+    margin:5% 0;
   }
 }
 
 #benefits {
-    .row {
-        object-fit: contain;
-    }
-    .image {
-        height: 500px;
-    } img {
-        max-height: 100%;
-        object-fit: contain;
-    }
+  background-color: #333;
+  .row {
+      object-fit: contain;
+  }
+  .image {
+    background: url(../images/dj-photo-grayscale.png) no-repeat center center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40vh;
+  }
+  img {
+      max-height: 100%;
+      object-fit: contain;
+  }
+}
+
+#services {
+  .one {
+    background-color: #3498db;
+  }
+  .two {
+    background-color: #2980b9;
+  }
+  .three {
+    background-color: #2b8ed1;
+  }
+  .one-third {
+    position: relative;
+    height: 0;
+    padding: 30% 5% 0 5%;
+  }
+  .services-squarediv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20%;
+  }
 }

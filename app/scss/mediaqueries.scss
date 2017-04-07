@@ -1,0 +1,45 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+.container {
+  padding: 0;
+  max-width: 1500px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .container {
+    width: 100%;
+  }
+  #benefits {
+    .image {
+      position: absolute;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
