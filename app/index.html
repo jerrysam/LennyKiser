@@ -28,6 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Swiper (For testimonials)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
 </head>
 <body>
 
@@ -57,6 +62,105 @@
     </div>
   </section>
 
+  <!-- Testimonial Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="testimonials">
+  <div style="position:relative;height:400px;">
+    <!-- Swiper -->
+    <div class="mobile-swiper"> <!-- JS to select mobile only, and display:none; for desktop -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(https://randomuser.me/api/portraits/men/12.jpg)"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p style="text-align:right;">- JONNY BLOGGS</p></div>
+          <div class="swiper-slide" style="background-image:url(https://randomuser.me/api/portraits/women/6.jpg)">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div class="swiper-slide" style="background-image:url(https://randomuser.me/api/portraits/men/28.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(https://randomuser.me/api/portraits/women/47.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(https://randomuser.me/api/portraits/men/25.jpg)"></div>        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div style="position:relative;height:400px;">
+    <!-- Desktop Swiper -->
+    <div class="desktop-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="u-full-width">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" class="slide-img u-pull-left">
+          <div class="swiper-textcontainer u-pull-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="text-align:right;">- JONNY BLOGGS</p>
+          </div>
+        </div></div>
+        <div class="swiper-slide"><div class="u-full-width">
+          <img src="https://randomuser.me/api/portraits/women/6.jpg" class="slide-img u-pull-left">
+          <div class="swiper-textcontainer u-pull-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="text-align:right;">- IAN ROCKET</p>
+          </div>
+        </div></div>
+        <div class="swiper-slide"><div class="u-full-width">
+          <img src="https://randomuser.me/api/portraits/men/28.jpg" class="slide-img u-pull-left">
+          <div class="swiper-textcontainer u-pull-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="text-align:right;">- JEROME MCJERRY</p>
+          </div>
+        </div></div>
+        <div class="swiper-slide"><div class="u-full-width">
+          <img src="https://randomuser.me/api/portraits/women/47.jpg" class="slide-img u-pull-left">
+          <div class="swiper-textcontainer u-pull-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="text-align:right;">- RICKY ROBBER</p>
+          </div>
+        </div></div>
+        <div class="swiper-slide"><div class="u-full-width">
+          <img src="https://randomuser.me/api/portraits/men/25.jpg" class="slide-img u-pull-left">
+          <div class="swiper-textcontainer u-pull-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p style="text-align:right;">- DONALD DUCK</p>
+          </div>
+        </div></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+  </div>
+  </section>
+
+<script>
+  // Replace mobile testimonials with the Desktop (all the HTML for Desktop is here)
+  // This is so that the mobile version stays lightweight (doesn't load desktop at all)
+  // But the desktop version does still load the desktop version (dekstop is heavier)
+  // THIS SCRIPT IS UNFINISHED, AND THE NEXT THING THAT NEEDS TO BE COMPLETED
+  $( window ).resize(function() {
+    var win = $(this);
+    if (win.width() >= 640) { // Can this function have like a 200ms delay?
+      $('#testimonials').html("PUT ALL THE DESKTOP HTML HERE");
+      // Trigger the below code:
+      var swiper = new Swiper('.desktop-swiper', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+      });
+    }
+  }
+  });
+</script>
+<style>
+</style>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.mobile-swiper', {
+    pagination: '.swiper-pagination',
+    grabCursor: true,
+    effect: 'cube',
+    cube: { shadow: false, slideShadows: false }
+  });
+
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
