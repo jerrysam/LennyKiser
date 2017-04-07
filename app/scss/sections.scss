@@ -6,3 +6,15 @@
     margin:25% 0;
   }
 }
+
+#benefits {
+    .row {
+        object-fit: contain;
+    }
+    .image {
+        height: 500px;
+    } img {
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
