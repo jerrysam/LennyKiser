@@ -1,3 +1,4 @@
+@import url("http://weloveiconfonts.com/api/?family=entypo");
 #hero {
   background: url("../images/home-studio.jpg") center center no-repeat;
   background-size: cover;
@@ -9,6 +10,9 @@
   background-color: #333; }
   #benefits .row {
     object-fit: contain; }
+    #benefits .row p {
+      font-family: "Montserrat";
+      font-weight: 300; }
   #benefits .image {
     background: url(../images/dj-photo-grayscale.png) no-repeat center center;
     background-size: cover;
@@ -42,3 +46,37 @@
   bottom: 0;
   right: 0;
   padding: 20%; }
+
+#debating {
+  background-color: #333; }
+
+#testimonials {
+  background-color: #333; }
+
+#footer {
+  margin: 0;
+  background-color: #333; }
+  #footer .row {
+    padding: 20px 0;
+    text-align: center; }
+    #footer .row p {
+      font-family: "Montserrat";
+      font-weight: 300; }
+    #footer .row #subscribe-form {
+      margin-bottom: 0; }
+      #footer .row #subscribe-form #email {
+        color: black;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 18px; }
+      #footer .row #subscribe-form #subscribe-button {
+        background-color: #2980b9;
+        font-family: "Montserrat";
+        font-weight: 400;
+        color: #333;
+        font-size: 16px; }
+    #footer .row .social {
+      display: inline-block;
+      padding: 0 15px;
+      font-family: Entypo;
+      font-size: 35px; }
