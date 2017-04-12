@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Swiper (For testimonials)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script>
+
+</head>
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+    </style>
+
+<body>
+
+
+    <!-- Section 1
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h1>Produce like a pros</h1>
+            <h3>Lenny Kiser</h3>
+            <h3>Certified Trainer [Logo]</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="benefits">
+      <div class="container">
+        <div class="row center-align">
+          <div class="one-half column" style="margin-top: 25%">
+            <h4>Question</h4>
+            <p>Solution</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="testimonials" style="position:relative;height:300px;">
+      <!-- Swiper -->
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: false,
+            slideShadows: false
+        }
+    });
+    </script>
+</body>
+</html>
