@@ -10,7 +10,7 @@
 
 #testimonials {
   background-color: #3498db; }
-  #testimonials #testimonials .swiper-slide {
+  #testimonials #testimonials, #testimonials .swiper-slide {
     background-color: #3498db; }
   #testimonials .mobile-swiper {
     width: 400px;
