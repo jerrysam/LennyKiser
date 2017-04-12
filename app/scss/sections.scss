@@ -1,13 +1,16 @@
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
 #hero {
   background: url("../images/home-studio.jpg") center center no-repeat;
   background-size: cover;
   color: white;
   .column {
-    margin:25% 0;
+    margin:5% 0;
   }
 }
 
 #benefits {
+
   background-color: #2c3e50;
 }
 
@@ -50,3 +53,95 @@
     padding: 0px;
   }
 }
+
+  background-color: #333;
+  .row {
+      object-fit: contain;
+      p {
+          font-family: "Montserrat";
+          font-weight: 300;
+      }
+  }
+  .image {
+    background: url(../images/dj-photo-grayscale.png) no-repeat center center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40vh;
+  }
+  img {
+      max-height: 100%;
+      object-fit: contain;
+  }
+}
+
+#services {
+  .one {
+    background-color: #3498db;
+  }
+  .two {
+    background-color: #2980b9;
+  }
+  .three {
+    background-color: #2b8ed1;
+  }
+  .one-third {
+    position: relative;
+    height: 0;
+    padding: 30% 5% 0 5%;
+  }
+  .services-squarediv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20%;
+  }
+}
+#debating {
+    background-color: #333;
+}
+
+#testimonials {
+    background-color: #333;
+}
+
+
+#footer {
+    margin: 0;
+    background-color: #333;
+    .row {
+        padding: 20px 0;
+        text-align: center;
+        p {
+            font-family: "Montserrat";
+            font-weight: 300;
+        }
+        #subscribe-form {
+            margin-bottom: 0;
+            #email {
+                color: black;
+                font-family: "Montserrat";
+                font-weight: 300;
+                font-size: 18px;
+            }
+            #subscribe-button {
+                background-color: #2980b9;
+                font-family: "Montserrat";
+                font-weight: 400;
+                color: #333;
+                font-size: 16px;
+            }
+        }
+        .social {
+            display: inline-block;
+            padding: 0 15px;
+            font-family: Entypo;
+            font-size: 35px;
+        }
+    }
+}
+
